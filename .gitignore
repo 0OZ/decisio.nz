@@ -42,9 +42,10 @@ yarn-error.log*
 .vercel
 .next
 .turbo
-.history 
+.history
 
 .idea/
 .vscode
+.yarn 
 
 tmp
