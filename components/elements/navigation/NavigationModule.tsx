@@ -1,6 +1,6 @@
 'use client'
 
-import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import { Navigation } from './Navigation'
 
 type Props = {
@@ -8,13 +8,11 @@ type Props = {
 }
 
 export const NavigationModule = ({ paths }: Props) => {
-  const router = useRouter()
-
   return (
     <div className="flex flex-1 py-6">
-      <div className="flex flex-1" onClick={() => router.push('/')}>
+      <Link className="flex flex-1" href={'/'}>
         x
-      </div>
+      </Link>
       <Navigation {...{ paths }} />
       <div className="flex flex-1" />
     </div>
